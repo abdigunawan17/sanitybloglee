@@ -1,9 +1,6 @@
-import { SanityClient } from "@sanity/client";
+import sanityClient from "@sanity/client";
 
-//iki ngono sik coba lho yo!!
-const sanityClient = () => ({
+export default sanityClient({
   projectId: "f0f98qox",
   dataset: "production",
 });
-
-export default sanityClient;
